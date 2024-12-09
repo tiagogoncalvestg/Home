@@ -18,15 +18,14 @@
 
 @media (max-width: 600px) {
     body {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
         transform: rotate(90deg);
         width: 500px;
     }
 
     section{
-        width: 500px;
-    }
-
-    #exampleModal{
-        /* margin: 7%; */
+        width: 600px;
     }
 }
