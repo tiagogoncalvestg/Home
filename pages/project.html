@@ -23,14 +23,14 @@
       media="all"
     />
 
-    <link rel="stylesheet" href="../css/project.css"/>
+    <link rel="stylesheet" href="../css/project.css" />
   </head>
-  <body style="background-color: #eee;">
+  <body style="background-color: #eee">
     <section class="pb-4">
       <div class="border rounded-5">
         <section
           class="p-5 w-100"
-          style="background-color: #eee; border-radius: 0.5rem 0.5rem 0 0;"
+          style="background-color: #eee; border-radius: 0.5rem 0.5rem 0 0"
         >
           <div class="row d-flex justify-content-center">
             <div class="col-md-12">
@@ -43,7 +43,7 @@
                 <div
                   class="card-body"
                   data-mdb-perfect-scrollbar="true"
-                  style="position: relative;"
+                  style="position: relative"
                 >
                   <table class="table mb-0">
                     <thead>
@@ -83,7 +83,7 @@
                             ><i class="fas fa-check text-success me-3"></i
                           ></a>
                           <a
-                          onclick="removerTarefa(1234)"
+                            onclick="removerTarefa(1234)"
                             data-mdb-tooltip-init=""
                             aria-label="Remove"
                             data-mdb-original-title="Remove"
@@ -144,12 +144,16 @@
                           <option>Annie Hall</option>
                         </select>
                         <label>Tarefa</label>
-                        <input id="tarefa" class="form-control" type="text" />
+                        <select class="form-control" id="tarefa">
+                          <option></option>
+                          <option>Alterar vencimento de cobrança</option>
+                          <option>Concluir alteração solicitada</option>
+                          <option>Entrar em contato com o Tech Lead</option>
+                          <option>Analisar prazos do projeto</option>
+                          <option>Verificar viabilidade de nova feature</option>
+                        </select>
                         <label>Prioridade</label>
-                        <select
-                          class="form-control"
-                          id="prioridade"
-                        >
+                        <select class="form-control" id="prioridade">
                           <option>Baixa prioridade</option>
                           <option>Média prioridade</option>
                           <option>Alta prioridade</option>
@@ -182,7 +186,19 @@
         </section>
 
         <a href="https://github.com/tiagogoncalvestg" target="_blank">
-          <marquee scrollamount="8" style="background-color: #14A44D;color: #fff;height: 60px;padding-top: 18px;text-transform: uppercase;">projeto para demonstração de lógica de programação. nenhum dado esta sendo persistido! Consulte repositórios, clique <span class="blink text-white">aqui.</span></marquee>
+          <marquee
+            scrollamount="8"
+            style="
+              background-color: #14a44d;
+              color: #fff;
+              height: 60px;
+              padding-top: 18px;
+              text-transform: uppercase;
+            "
+            >projeto para demonstração de lógica de programação. nenhum dado
+            esta sendo persistido! Consulte repositórios, clique
+            <span class="blink text-white">aqui.</span></marquee
+          >
         </a>
 
         <script type="text/javascript" src="../js/project.js"></script>
