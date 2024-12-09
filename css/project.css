@@ -16,7 +16,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     body {
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
