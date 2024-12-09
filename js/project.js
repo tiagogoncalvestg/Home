@@ -1,3 +1,4 @@
+
 function criarTarefa() {
   // Recupera os dados da nova tarefa
   id = (Math.random() * (999999 - 1) + 1) + '';
@@ -5,7 +6,7 @@ function criarTarefa() {
   prioridade = document.getElementById('prioridade').value;
   colaborador = document.getElementById('exampleFormControlSelect1').value;
 
-  bg = obterPriorityBg(prioridade);  
+  bg = obterPriorityBg(prioridade);
 
   url = obterPhotoUrl(colaborador);
 
@@ -71,7 +72,7 @@ function concluirTarefa(id) {
   // Contador de tarefas concluídas
 }
 
-function obterPriorityBg(prioridade){
+function obterPriorityBg(prioridade) {
 
   let bg = ""
 
@@ -118,3 +119,20 @@ function obterPhotoUrl(colaborador) {
 
   return url;
 }
+
+async function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function analyze() {
+  await sleep(1000);
+
+  // obtém a largura e a altura do screen
+  var screenWidth = window.innerWidth;
+
+  if (screenWidth < 600) {
+    alert('Utilize seu dispositivo na horizontal para melhor experiência!')
+  }
+}
+
+analyze();
