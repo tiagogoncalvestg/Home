@@ -3,7 +3,7 @@
     padding: 148px 0;
 }
 
-.presentation-content{
+.presentation-content {
     margin: 48px 0;
 }
 
@@ -11,7 +11,7 @@
     margin: 0 0 48px;
 }
 
-.custom-button{
+.custom-button {
     border: 2px solid black;
     padding: 12px 24px;
     text-decoration: none;
@@ -21,7 +21,7 @@
     font-weight: bolder;
 }
 
-.custom-button:hover{
+.custom-button:hover {
     color: black;
     background-color: white;
 }
@@ -32,7 +32,7 @@
 
 .col-content-2 {
     height: 1000px;
-    padding: 248px 0;
+    padding: 196px 0;
 }
 
 .col-content-2 h2 {
@@ -44,11 +44,9 @@
 }
 
 @media (max-width: 991px) {
-    .col-content-1 {}
-
     .col-content-2 {
         padding: 96px 0;
-        height: 624px;
+        height: 724px;
     }
 }
 
@@ -58,7 +56,7 @@
         height: 748px;
     }
 
-    .presentation-content{
+    .presentation-content {
         margin: 24px 0 36px;
     }
 
@@ -81,7 +79,7 @@
 
     .col-content-2 {
         padding: 36px 12px;
-        height: 448px;
+        height: 724px;
     }
 
     .col-content-2 h2 {
