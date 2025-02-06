@@ -1,6 +1,6 @@
 .col-content-1 {
     height: 1000px;
-    padding: 148px 0;
+    padding: 48px 0;
 }
 
 .presentation-content {
@@ -52,7 +52,7 @@
 
 @media (max-width: 479px) {
     .col-content-1 {
-        padding: 96px 0;
+        padding: 12px 0;
         height: 748px;
     }
 

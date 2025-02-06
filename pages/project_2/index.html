@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WHEATHER API</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      id="roboto-subset.css-css"
+      href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div class="row justify-content-center" style="margin-top: 180px">
+      <div class="col-md-5">
+        <div class="card" style="overflow: hidden">
+          <div class="row">
+            <div class="row p-2 justify-content-center">
+              <a
+                style="
+                  padding: 12px;
+                  max-width: 300px;
+                  height: 48px;
+                  margin: auto;
+                "
+                >SELECIONE UMA CIDADE E TESTE</a
+              >
+              <select
+                id="cidades"
+                style="
+                  padding: 12px;
+                  max-width: 200px;
+                  height: 48px;
+                  margin: auto;
+                "
+                class="form-select mb-2"
+                aria-label="Default select example"
+              >
+                <option value="0">São Paulo</option>
+                <option value="1">Paris</option>
+                <option value="2">New York</option>
+                <option value="3">Kyiv</option>
+                <option value="4">Singapore</option>
+              </select>
+              <hr />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id="cidade"></h5>
+                <p class="card-text">
+                  Tempo instável pela frente, se agasalhe ao sair de casa e
+                  tenha um guarda-chuva sempre em mãos.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="" style="padding-top: 24px">
+                <p id="wheather-logo" class="text-center">
+                  <script>
+                    function getRandomNumber() {
+                      return Math.floor(Math.random() * 3);
+                    }
+
+                    const wheathears = ["cloud.png", "summer.png", "light.png"];
+                    const index = getRandomNumber();
+
+                    document.querySelector("#wheather-logo").innerHTML = `
+                      <img
+                        class=""
+                        src="../../assets/${wheathears[index]}"
+                        style="height: 100px"
+                      />
+                    `;
+                  </script>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <marquee
+            id="texto-rotativo"
+            scrollamount="6"
+            style="
+              background-color: #14a44d;
+              color: #fff;
+              height: 40px;
+              padding-top: 8px;
+              text-transform: uppercase;
+              transform: translateY(0);
+              border-bottom-right-radius: 0px solid #ccc;
+            "
+          ></marquee>
+          <marquee
+            id="texto-rotativo-2"
+            scrollamount="6"
+            style="
+              background-color: #e25922;
+              color: #fff;
+              height: 40px;
+              padding-top: 8px;
+              text-transform: uppercase;
+              transform: translateY(0);
+              border-bottom-right-radius: 0px solid #ccc;
+            "
+          ></marquee>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript" src="../../js/project_2/index.js"></script>

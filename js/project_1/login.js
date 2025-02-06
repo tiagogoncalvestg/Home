@@ -12,5 +12,5 @@ async function sleep(ms) {
 async function redirect() {
   await sleep(500);
 
-  window.location.href = './project-1.html';
+  window.location.href = './index.html';
 }
